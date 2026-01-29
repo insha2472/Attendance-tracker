@@ -5,7 +5,7 @@ import os
 
 app = Flask(__name__)
 DATABASE = 'attendance.db'
-
+# 
 def init_db():
     if not os.path.exists(DATABASE):
         conn = sqlite3.connect(DATABASE)
